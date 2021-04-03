@@ -6,6 +6,7 @@ import pandas as pd
 data=pd.read_csv("startup_funding.csv",skipinitialspace=True,)
 #print(data.CityLocation)
 data["CityLocation"].fillna("Dummy",inplace=True)
+data = None
 data["AmountInUSD"].fillna("0",inplace=True)
 ext_city=[]
 def seperateCity(city):
